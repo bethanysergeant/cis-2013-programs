@@ -5,19 +5,18 @@ var $ = function (id)
 
 var calculateIncome = function () 
 {
-    var floatTaxRate, floatAnnualTax, intAnnualIncome;
-    intAnnualIncome = parseInt($("annualIncome").value);
+    var floatAnnualIncome = parseInt($("annualIncome").value);
     var intUserAge = parseInt($("age").value);
-    
+    var floatTaxRate, floatAnnualTax;
     if (intUserAge >= 65)
     {
-    	if (intAnnualIncome <= 30000)
+    	if (floatAnnualIncome <= 30000)
     	{
-    		floatTaxRate = .025;
+    		floatTaxRate = 2.5;
     	}
     	else
     	{
-    		if(intAnnualIncome >= 30000 && intAnnualIncome <= 75000)
+    		if(floatAnnualIncome >= 30000 && floatAnnualIncome <= 75000)
     		{
     			floatTaxRate = 5;
     		}
@@ -28,15 +27,15 @@ var calculateIncome = function ()
     	}
     } 
     else
-    {
-    	
-    	if (intAnnualIncome <= 30000)
+    
+    	{
+    	if (floatAnnualIncome <= 30000)
     	{
     		floatTaxRate = 5;
     	}
         else
         {
-            if (intAnnualIncome >= 30000 && intAnnualIncome <= 75000)
+            if (floatAnnualIncome >= 30000 && floatAnnualIncome <= 75000)
             {
                 floatTaxRate = 10;
             }
@@ -45,12 +44,15 @@ var calculateIncome = function ()
                 floatTaxRate = 20;
             }
         }
-	}
-    floatAnnualTax = intAnnualIncome * (floatTaxRate/100);
+	
+}
+
+	floatAnnualTax = floatAnnualIncome * (floatTaxRate/100);
 
 	$("annualTax").value = floatAnnualTax;
 
-	alert ("Your annual income tax this year is $" + floatAnnualTax  +"\nBased upon an annual income of $"+ intAnnualIncome +
+
+	alert ("Your annual income tax this year is $" + floatAnnualTax  +"\nBased upon an annual income of $"+ floatAnnualIncome+
 	"\nAnd a tax rate of " +floatTaxRate+ "% \nNote: Tax rate is based upon your age");
 	
 }
