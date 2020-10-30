@@ -1,0 +1,54 @@
+body {
+    
+    font-family: 'Syne Mono', monospace;
+    background: #520066;
+}
+
+#content {
+    width: 600px;
+    margin: 10px auto;
+    padding: 5px 20px;
+    background: #f5ccff;
+    border: 10px solid #ff751a;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+
+}
+
+p {
+	color: #cc5200;
+	font-weight: bold;
+	text-align: center;
+}
+
+label {
+    display: block;
+    width: 20em;
+    text-align: right;
+    padding-right: 1em;
+    float: left;
+    color: #cc5200;
+}
+
+input {
+    display: block;
+    float: left;
+    width: 100px;
+}
+
+button {
+    
+}
+
+#futureValue {
+    color: #000000;
+}
+
+br {
+    clear: left;
+}
