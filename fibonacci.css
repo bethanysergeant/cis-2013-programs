@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #AAD685;
+    margin: 30px auto;
+    width: 750px;
+    border: 8px solid #621D59;
+}
+h1 {
+    font-family: 'Anton', sans-serif;
+	color: #711966;
+	text-align: center;
+}
+
+#content {
+    padding: 5px 0px;
+    width: 750px;
+    background: #CAECAE;
+    
+}
+
+
+p {
+	text-align: center;
+}
+
+h4 {
+	text-align: center;
+}
+section {
+    padding: 0 2em 1em;
+}
+
+label {
+	float: left;
+    width: 20em;
+    text-align: right;
+    padding-bottom: .5em;
+}
+input {
+    margin-left: 1em;
+    margin-bottom: .5em;
+}
+fieldset {
+	text-align: center;
+}
+textarea {
+	resize: none;
+	font-size: 150%;
+    width: 740px;
+}
+#fib {
+	color: #A42396;
+	font-weight: bold;
+}
